@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0
+}
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-size: 16px;
+  --padding: 10px;
+}
+
+body {
+  font-size: var(--font-size);
+  color: var(--primary-color);
+  padding: var(--padding);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--padding);
+  border: none;
+  border-radius: 4px;
+  font-size: var(--font-size);
+  cursor: pointer;
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  padding: var(--padding);
+  border: 1px solid var(--primary-color);
+}

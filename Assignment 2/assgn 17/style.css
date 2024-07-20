@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#task{
+    margin: 20px;
+    padding: 20px;    
+    color: aliceblue;
+    background-color: #f9a5a5;
+    text-align: center;
+}
+.container{
+  margin: 50px;
+  padding: 40px;
+}
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+form{
+  background-color: #f9a5a5;
+  padding: 20px;
+  color: yellow;
+  position: relative;  
+}
+input, textarea{
+  margin-bottom: 10px;
+}
+
+label{
+  font-size: 19px;
+}
+#name, #email, #dob{
+  width: 40%;   
+  height: 40px;   
+  padding: 1px;  
+  font-size: 16px
+}
+#btn-container{
+  position: relative;
+  margin-left: 35%;
+}
+.btn{
+  text-align: center;  
+  background-color: blue;
+  color: #f9a5a5; 
+  width: 100px; 
+  height: 30px;
+  font-size: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}

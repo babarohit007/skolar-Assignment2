@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#task{
+    margin: 20px;
+    padding: 20px;    
+    color: aliceblue;
+    background-color: #f9a5a5;
+    text-align: center;
+}
+.container{
+  margin: 50px;
+  padding: 40px;
+}
+.box {  
+  width: 100px;
+  height: 100px;
+  right: 20px;
+  background-color: rgb(82, 192, 206);
+  transition: transform 2s ease-in-out .5s;
+}
+.translate1:hover{
+  transform: translate(40vw, 30vh);
+}
+.translate2:hover{
+  transform: rotate(360deg);
+}
+.translate3:hover{
+  transform: scale(1.5);
+}
+.translate4:hover{
+  transform: skew(90deg, 180deg );
+}
+.translate5:hover{
+  transform: translate(40vw, -40vh) rotate(360deg) scale(1.5) skew(90deg, 180deg );
+}
+
+

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+#task{
+    margin: 20px;
+    padding: 20px;    
+    color: aliceblue;
+    background-color: #f9a5a5;
+    text-align: center;
+}
+.container{
+  display: flex;
+  align-items: end;  
+  position: relative;
+  margin-top: 20px;
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid black;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-left: 9%;
+  bottom: 10px;
+  background-color: blue;
+  animation-name: slideAndChangeColor;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  /* transition: height 2s ease-in 2s; */
+}
+
+@keyframes slideAndChangeColor {
+  0% {
+    transform: translateX(0);
+    background-color: blue;
+    opacity: 0;
+  }  
+  50% {
+    transform: translateX(200px);
+    background-color: green;
+    opacity: .5;
+    height: 300px;
+    width: 50px;
+  }
+  /* 50%{
+    transform: translateY(100px);
+    background-color: #d0d0d0;
+    opacity: .8;
+  } */
+  100% {
+    transform: translateX(0);
+    background-color: red;
+    opacity: 1;    
+  }
+}
